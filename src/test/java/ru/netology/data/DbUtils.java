@@ -10,12 +10,15 @@ import java.sql.DriverManager;
 public class DbUtils {
     private static QueryRunner runner;
     private static Connection conn;
+    private static String url = System.getProperty("db.url");
+    private static String user = System.getProperty("db.user");
+    private static String password = System.getProperty("db.password");
 
     @SneakyThrows
     public static void setUp() {
         runner = new QueryRunner();
         conn = DriverManager.
-                getConnection("jdbc:mysql://localhost:3306/app", "user", "pass");
+                getConnection(url, user, password);
     }
 
     @SneakyThrows

@@ -8,7 +8,7 @@
 
 
 ## Количество тест-кейсов
-![allure report количество тест-кейсов](https://user-images.githubusercontent.com/117623022/234628856-c478b9b1-9482-40af-a622-4295b966e0ab.png)
+![https://user-images.githubusercontent.com/117623022/234628856-c478b9b1-9482-40af-a622-4295b966e0ab.png](https://github.com/Mezis4/AutoTestCoursework/blob/1a0c1f14ec7ae4109ff902e13a236d389ebccfca/docs/screen/allure%20report%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D1%82%D0%B5%D1%81%D1%82-%D0%BA%D0%B5%D0%B9%D1%81%D0%BE%D0%B2.png))
 ![allure 2.png](screen%2Fallure%202.png)
 ![allure 3.png](screen%2Fallure%203.png)
 ![allure 4.png](screen%2Fallure%204.png)

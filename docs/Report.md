@@ -8,7 +8,7 @@
 
 
 ## Количество тест-кейсов
-![allure report количество тест-кейсов.png](screen%2Fallure%20report%20%EA%EE%EB%E8%F7%E5%F1%F2%E2%EE%20%F2%E5%F1%F2-%EA%E5%E9%F1%EE%E2.png)
+![allure report количество тест-кейсов](https://user-images.githubusercontent.com/117623022/234628856-c478b9b1-9482-40af-a622-4295b966e0ab.png)
 ![allure 2.png](screen%2Fallure%202.png)
 ![allure 3.png](screen%2Fallure%203.png)
 ![allure 4.png](screen%2Fallure%204.png)

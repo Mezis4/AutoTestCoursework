@@ -22,8 +22,9 @@ public class APITests {
     private static DbUtils utils;
     private static Gson gson = new Gson();
     private static RequestSpecification spec = new RequestSpecBuilder()
-            .setBaseUri("http://localhost").setPort(8080)
-            .setAccept(ContentType.JSON).setContentType(ContentType.JSON)
+            .setBaseUri("http://localhost:8080/")
+            .setContentType(ContentType.JSON)
+            .setAccept(ContentType.JSON)
             .log(LogDetail.ALL).build();
 
     @BeforeAll

@@ -25,8 +25,7 @@
 1. Пофиксить баг с отображением ошибки ввода под полем "Владелец" при отправки формы с пустым полем "CVC/CVV"
 [Баг](https://github.com/Mezis4/AutoTestCoursework/issues/9)
 1. Пофиксить баги с валидацией полем "Владелец" неккоректных значений (символы, цифры и т.д.) [Баг](https://github.com/Mezis4/AutoTestCoursework/issues/8),
-[Баг 2](https://github.com/Mezis4/AutoTestCoursework/issues/7), [Баг 3](https://github.com/Mezis4/AutoTestCoursework/issues/6),
-[Баг 4](https://github.com/Mezis4/AutoTestCoursework/issues/6), [Баг 4](https://github.com/Mezis4/AutoTestCoursework/issues/5)
+[Баг 2](https://github.com/Mezis4/AutoTestCoursework/issues/7), [Баг 3](https://github.com/Mezis4/AutoTestCoursework/issues/6), [Баг 4](https://github.com/Mezis4/AutoTestCoursework/issues/5)
 1. Пофиксить баг с валидацией полем "Месяц" значения "00" [Баг](https://github.com/Mezis4/AutoTestCoursework/issues/4)
 1. Изменить содержание ошибок-предупреждений под полями при отправки формы с пустыми полями "Месяц", "Номер карты", "Год",
 "CVC/CVV" [Баг](https://github.com/Mezis4/AutoTestCoursework/issues/3)

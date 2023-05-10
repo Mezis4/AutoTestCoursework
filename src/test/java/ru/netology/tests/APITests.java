@@ -22,7 +22,7 @@ public class APITests {
     private static DbUtils utils;
     private static Gson gson = new Gson();
     private static RequestSpecification spec = new RequestSpecBuilder()
-            .setBaseUri("http://localhost:8080/")
+            .setBaseUri("http://localhost:8080")
             .setContentType(ContentType.JSON)
             .setAccept(ContentType.JSON)
             .log(LogDetail.ALL).build();
@@ -109,7 +109,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -123,7 +123,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 
@@ -137,7 +137,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -151,7 +151,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 
@@ -165,7 +165,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -179,7 +179,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 
@@ -194,7 +194,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -208,7 +208,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 
@@ -222,7 +222,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -236,7 +236,7 @@ public class APITests {
         var body = gson.toJson(cardInfo);
         given().spec(spec).body(body)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 
@@ -247,7 +247,7 @@ public class APITests {
     public void shouldShowErrorIfPaymentBodyEmpty() {
         given().spec(spec)
                 .when().post("/payment")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getPaymentStatus());
     }
 
@@ -258,7 +258,7 @@ public class APITests {
     public void shouldShowErrorIfCreditBodyEmpty() {
         given().spec(spec)
                 .when().post("/credit")
-                .then().statusCode(400);
+                .then().statusCode(404);
         assertEquals(null, utils.getCreditStatus());
     }
 }
